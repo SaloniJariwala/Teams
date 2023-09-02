@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            lace
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <header class="main_header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="site_logo">
+                            <a href="/">
+                                <h3>team<span>.</span></h3>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-9">
+                        <div class="menu_links">
+                            <ul>
+                                <li><a href="#">Product</a></li>
+                                <li><a href="./blog.html">Blog</a></li>
+                                <li><a href="#">Support</a></li>
+                                <li><a href="#">Log In</a></li>
+                            </ul>
+                            <button type="button" class="sec_btn dark_text_btn">Get Access</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="blog_content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="single_blog_page_header">
+                            <h1>
+                                Data exported by Team Cloud organization administrators contained private
+                                files
+                            </h1>
+
+                            <div class="single_blog_user_profile_sec">
+                                <img src="./assets/images/blog_images/blog_single_user.png" alt="User" />
+                                <p>Mark Brooklyn &nbsp;<span></span>&nbsp; June 14, 2023</p>
+                            </div>
+                        </div>
+
+                        <div class="single_blog_page_content">
+                            <div class="image_wrapper">
+                                <img src="./assets/images/blog_images/single_blog.png" alt="Blog Image" />
+                            </div>
+                            <div class="blog_content_wrapper">
+                                <div class="blog_text_content">
+                                    <p>
+                                        Administrators of Team Cloud organizations can export public data from
+                                        their organization via the organization settings menu. The exports
+                                        include all the data that appears in public streams, and can be used
+                                        to migrate from Team Cloud to self-hosting Team. Note that exporting
+                                        private data is a separate process that requires contacting Team
+                                        Support.
+                                    </p>
+
+                                    <p>
+                                        Due to a bug in the public export code, exports of public data
+                                        contained all uploaded files, even those from private messages and
+                                        private streams. This may have allowed organization owners or
+                                        administrators to extract uploaded files that they were not otherwise
+                                        allowed to access. The content of non-public messages was never
+                                        included in public exports.
+                                    </p>
+
+                                    <p>
+                                        This bug has existed since the public export feature was implemented
+                                        in August 2019. We have deleted all existing Team Cloud exports from
+                                        our servers, and will be making changes to auto-expire all exports
+                                        after 7 days in the future. This bug was fixed for self-hosted users
+                                        in the Team Server 5.4 release.
+                                    </p>
+
+                                    <p>
+                                        We have notified by email all administrators and users in
+                                        non-deactivated Team Cloud organizations who may have been impacted by
+                                        this bug. As many organizations have never exported their data, most
+                                        Team Cloud users were not affected.
+                                    </p>
+
+                                    <p>
+                                        We would like to thank Antoine Benoist for bringing this issue to our
+                                        attention.
+                                    </p>
+                                </div>
+                                <div class="blog_author_info">
+                                    <img src="./assets/images/blog_images/author1.png" alt="author image" />
+                                    <div class="blog_author_info_content">
+                                        <h5>written by</h5>
+                                        <h3>Mark Brooklyn</h3>
+                                        <p>
+                                            COO at Team. Author of the upcoming book on Team Management and
+                                            Leadership.
+                                        </p>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="comment_sec">
+                                    <h6>Join the conversation</h6>
+                                    <div class="single_comment_wrapper">
+                                        <div class="user_image_wrapper">
+                                            <img src="./assets/images/blog_images/user1.png" alt="user1" />
+                                        </div>
+                                        <form action="" class="comment_form">
+                                            <textarea
+                                                name="comment"
+                                                class="form_input form_input_bordered"
+                                                placeholder="Comment"
+                                            ></textarea>
+                                            <div class="button_wrapper">
+                                                <button class="sec_btn dark_text_btn" type="button">
+                                                    Submit
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

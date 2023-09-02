@@ -1,0 +1,779 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: #F5F5F5;
+}
+
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0px;
+}
+
+
+a {
+    text-decoration: none;
+    color: #232340;
+}
+
+p {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 0;
+}
+
+input {
+    outline: none !important;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+hr {
+    margin: 0;
+}
+
+@media (min-width: 1500px) {
+    .container {
+        max-width: 1184px;
+    }
+}
+
+/* Start of Common */
+
+.h1_title {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 64px;
+    margin-bottom: 16px;
+}
+
+.h2_title {
+    color: #232340;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 64px;
+}
+
+.h3_title {
+    color: #5468E7;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.sec_btn {
+    outline: none !important;
+    border: none !important;
+    display: inline-flex;
+    padding: 10px 44px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    background: rgba(84, 104, 231, 0.50);
+    color: #F5F5F5;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+    transition: 0.3s;
+}
+
+.dark_text_btn {
+    color: #232340;
+    background: rgb(84, 104, 231, 0.50);
+}
+
+.dark_bg_btn {
+    background: #5468E7;
+}
+
+.dark_bg_btn:hover {
+    color: #5468E7;
+    background-color: #fff;
+}
+
+.btn_lg {
+    min-width: 200px;
+}
+
+.read_more {
+    color: #5468E7;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-decoration-line: underline;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.read_more:hover {
+    color: #232340;
+}
+
+.read_more img {
+    height: 30px;
+    width: 30px;
+}
+
+.input_wp {
+    position: relative;
+    margin-top: 10px;
+}
+
+.input_wp img {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translate(0, -50%);
+}
+
+.input_with_icon input {
+    padding-right: 40px;
+}
+
+.form_input {
+    border-radius: 4px;
+    padding: 10px 16px;
+    width: 100%;
+    border: 2px solid #D1ECFD;
+    background: #F5F5F5;
+}
+
+.form_input_bordered {
+    border-color: #7676B2;
+    outline: none !important;
+}
+
+.white_input {
+    background: rgba(245, 245, 245, 0.24);
+    outline: none !important;
+    border: none !important;
+    color: #fff;
+}
+
+.white_input::placeholder {
+    color: #fff;
+}
+
+.form_input::placeholder {
+    color: #7676B2;
+}
+
+.form_input_bordered::placeholder {
+    color: #232340;
+}
+
+
+/* End of Common */
+
+/* Start of Header section */
+
+.main_header {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 42px 0;
+}
+
+.main_header h3 {
+    margin-bottom: 0;
+}
+
+.site_logo h3 {
+    color: #232340;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -1.04px;
+}
+
+.site_logo h3 span {
+    color: #5468E7;
+    font-size: 52px;
+    line-height: 1;
+    letter-spacing: -1.04px;
+}
+
+.white_header .site_logo h3 {
+    color: #fff;
+}
+
+.menu_links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 56px;
+}
+
+.menu_links ul {
+    display: inline-flex;
+    margin-bottom: unset;
+    gap: 56px;
+}
+
+.menu_links ul li {
+    display: flex;
+    align-items: center;
+}
+
+.menu_links ul li a {
+    color: #232340;
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.white_header .menu_links ul li a {
+    color: #fff;
+    text-shadow: 0px 8px 16px rgba(35, 35, 64, 0.60);
+}
+
+.white_header .menu_links ul li a:hover {
+    color: #5468E7;
+}
+
+.white_header .menu_links .sec_btn {
+    color: #fff;
+}
+
+/* End of Header section */
+
+
+/* Start of Hero section */
+
+.hero_section {
+    color: #fff;
+    background-size: cover;
+    background-position: top;
+    padding: 250px 0 248px;
+}
+
+.banner_text {
+    padding-bottom: 56px;
+}
+
+.banner_text p {
+    max-width: 397px;
+}
+
+.banner_form {
+    display: inline-flex;
+    gap: 16px;
+}
+
+.form_input_wp {
+    position: relative;
+    max-width: 298px;
+}
+
+.right_arrow {
+    position: absolute;
+    transform: translate(0, -50%);
+    top: 50%;
+    right: 16px;
+}
+
+/* End of Hero section */
+
+/* Start of Mockup section */
+
+.mockup_section {
+    padding: 80px 0 120px 0;
+}
+
+.img_sec {
+    margin-right: -20vw;
+}
+
+.img_sec img {
+    width: 100%;
+}
+
+.right_section {
+    max-width: 460px;
+}
+
+.right_section h2 {
+    margin-bottom: 24px;
+}
+
+.right_section .read_more {
+    margin-top: 50px;
+}
+
+/* End of Mockup section */
+
+/* Start of Info section-1 */
+
+.info_1_sec {
+    padding-bottom: 120px;
+}
+
+.img_wrapper {
+    position: relative;
+}
+
+.calender_img {
+    position: absolute;
+    right: 22px;
+    top: 24px;
+}
+
+.info_wrapper_odd {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.info_wrapper_even {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.info_content {
+    display: flex;
+    flex-direction: column;
+    max-width: 456px;
+}
+
+.info_content h2 {
+    margin-bottom: 24px;
+}
+
+.info_content p {
+    margin-bottom: 0;
+}
+
+.info_content a {
+    margin-top: 48px;
+}
+
+.info2_1 {
+    position: absolute;
+    top: 266px;
+    right: 24px;
+}
+
+.info2_2 {
+    position: absolute;
+    bottom: 24.48px;
+    right: 24px;
+}
+
+.info3_1 {
+    position: absolute;
+    bottom: 116.52px;
+    left: 25px;
+}
+
+.info3_2 {
+    position: absolute;
+    bottom: 23.5px;
+    left: 25px;
+}
+
+/* End of Info section-1 */
+
+/* Start of Testimonials section */
+
+.testimonial_sec {
+    padding: 93px 0 164px;
+}
+
+.testimonial_sec h2 {
+    padding-bottom: 120px;
+}
+
+.testimonial_box {
+    padding: 44px 33px;
+    background-color: #fff;
+    box-shadow: 0px 16px 24px 0px rgba(118, 118, 178, 0.24);
+}
+
+.testimonial_box p {
+    margin-bottom: 40px;
+}
+
+.rating_wrapper {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.testimonial_name_sec {
+    display: flex;
+    gap: 14px;
+}
+
+.testimonial_name_sec img {
+    border-radius: 50%;
+}
+
+.testimonial_name_content h4 {
+    margin-bottom: 0;
+}
+
+.testimonial_name_content span {
+    color: #7676B2;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0.14px;
+}
+
+.slick-list {
+    margin: 0 -30px;
+}
+
+.slick-slide {
+    padding: 0 30px;
+}
+
+.testimonial_list .slick-list {
+    width: calc(100% + 42%);
+    padding-bottom: 50px;
+}
+
+.slide-arrow {
+    outline: none !important;
+    border: none !important;
+    background: transparent;
+    position: absolute;
+    right: 0;
+    bottom: -39px;
+    z-index: 2;
+}
+
+.slide-arrow.prev-arrow {
+    right: 62px;
+}
+
+/* End of Testimonials section */
+
+/* Start of Footer Section */
+
+.footer {
+    background-color: #232340;
+}
+
+.top_footer {
+    padding: 73px 0 157px;
+}
+
+.bottom_footer {
+    padding-bottom: 36px;
+}
+
+.footer_logo_section p {
+    color: #F5F5F5;
+    font-family: 14px;
+    line-height: 23px;
+    letter-spacing: 0.14px;
+    margin-top: 18px;
+}
+
+.footer_menu_sec {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_menu_list {
+    margin-top: 22px;
+}
+
+.footer_menu_list h5 {
+    color: #5468E7;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-bottom: 0;
+}
+
+.footer_menu_list ul {
+    margin-top: 16px;
+}
+
+.footer_menu_list li {
+    margin-bottom: 12px;
+}
+
+.footer_menu_list ul li a {
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+.address_list {
+    display: block;
+    max-width: 138px;
+}
+
+
+.copyright_sec {
+    color: #fff;
+}
+
+.copyright_sec p {
+    font-size: 14px;
+    line-height: 1.65;
+    letter-spacing: 0.14px;
+    margin-bottom: 0;
+}
+
+.footer_form_submit_btn {
+    background: transparent;
+    border: none !important;
+    outline: none !important;
+}
+
+/* End of Footer Section */
+
+
+/* =========================== Blog Page CSS Start =========================== */
+
+.blog_page p {
+    font-size: 14px;
+    line-height: 1.65;
+    letter-spacing: 0.14px;
+}
+
+.inner_banner {
+    padding: 173px 0 78px;
+}
+
+
+.inner_banner_text h1 {
+    color: #232340;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.28;
+    margin-bottom: 9px;
+}
+
+.inner_banner_text p {
+    font-size: 14px;
+    line-height: 1.65;
+    letter-spacing: 0.14px;
+}
+
+.blog_box {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 18px 24px 0px rgba(118, 118, 178, 0.28);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog_box_content {
+    margin-top: 23px;
+    padding: 0 17px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.blog_box_text_content p {
+    color: #232340;
+    font-size: 14px;
+    line-height: 1.65;
+    letter-spacing: 0.14px;
+}
+
+.blog_image {
+    border-radius: 8px 8px 0 0;
+}
+
+.blog_box_text_content .h3_title {
+    margin-bottom: 25px;
+    display: block;
+}
+
+.user_profile_sec {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.user_profile_sec span {
+    color: #7676B2;
+    font-size: 14px;
+    line-height: 1.65;
+    letter-spacing: 0.14px;
+}
+
+.blog_page_content .row {
+    --bs-gutter-x: 29px;
+    --bs-gutter-y: 40px;
+}
+
+.blog_btn {
+    padding: 119px 0 163px;
+    text-align: center;
+}
+
+/* =========================== Blog Page CSS End =========================== */
+
+
+/* =========================== Blog Single Page CSS Start =========================== */
+
+.blog_content {
+    padding-top: 228px;
+}
+
+.blog_content .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.single_blog_page_header {
+    max-width: 764px;
+    margin: 0 auto;
+}
+
+.single_blog_page_header h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.28;
+    text-align: left;
+}
+
+.single_blog_user_profile_sec {
+    margin: 53px 0 56px;
+    display: inline-flex;
+    gap: 9px;
+    align-items: center;
+}
+
+.single_blog_user_profile_sec p {
+    color: #7676B2;
+    font-size: 14px;
+    line-height: 1.64;
+    letter-spacing: 0.14px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.single_blog_user_profile_sec p span {
+    height: 24px;
+    border: 1px solid #7676B2;
+    display: inline-block;
+}
+
+.blog_text_content {
+    margin: 77px 0 59px;
+}
+
+.blog_content_wrapper {
+    max-width: 764px;
+    margin: 0 auto;
+}
+
+.blog_text_content p {
+    margin-bottom: 26px;
+}
+
+.blog_author_info {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    align-items: center;
+    margin: 79px 0 118px;
+    max-width: 424px;
+}
+
+.blog_author_info_content {
+    /* display: inline-flex;
+    flex-direction: column; */
+    /* gap: 25px; */
+}
+
+.blog_author_info_content h5 {
+    text-transform: uppercase;
+    color: #C897E4;
+    margin-bottom: 13px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.63;
+}
+
+.blog_author_info_content h3 {
+    font-size: 24px;
+    line-height: 1.25;
+    margin-bottom: 11px;
+}
+
+.blog_author_info_content p {
+    color: rgba(35, 35, 64, 0.60);
+    font-size: 14px;
+    line-height: 1.65;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.comment_sec {
+    padding: 123px 0 160px;
+}
+
+.comment_sec h6 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 47px;
+}
+
+.single_comment_wrapper {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.button_wrapper {
+    display: inline-flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 10px;
+}
+
+textarea.form_input {
+    height: 199px;
+    padding: 18px 14px;
+    resize: none;
+    display: flex;
+}
+
+.comment_form {
+    width: 100%;
+}
+
+/* =========================== Blog Single Page CSS End =========================== */
